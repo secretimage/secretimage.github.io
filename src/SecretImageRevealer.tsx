@@ -1,6 +1,6 @@
 // SecretImageRevealer.tsx
 import React, { useState } from 'react';
-import viteLogo from '/vite.svg';
+import pebbles from '/IMG_7778.png';
 import './SecretImageRevealer.css'; // Import the CSS file for styling
 
 const SecretImageRevealer: React.FC = () => {
@@ -37,8 +37,8 @@ const SecretImageRevealer: React.FC = () => {
       />
       {isSecretRevealed && (
         <div className="image-container">
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
+          <a href={pebbles} target="_blank">
+            <img src={pebbles} className="logo" alt="Vite logo" />
           </a>
         </div>
       )}
