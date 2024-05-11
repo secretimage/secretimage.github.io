@@ -1,11 +1,26 @@
 // SecretImageRevealer.tsx
 import React, { useState } from 'react';
-import pebbles from '/IMG_7778.png';
 import './SecretImageRevealer.css'; // Import the CSS file for styling
+
+const images = [
+  '/IMG_6791.png',
+  '/IMG_6792.png',
+  '/IMG_6793.png',
+  '/IMG_7778.png',
+  '/IMG_7794.png',
+  '/IMG_7795.png',
+  '/IMG_7796.png',
+  '/IMG_7797.png',
+  '/IMG_7798.png',
+  '/IMG_8060.png',
+  '/IMG_8061.png',
+  '/IMG_8062.png',
+];
 
 const SecretImageRevealer: React.FC = () => {
   const [input, setInput] = useState<string>('');
   const [isSecretRevealed, setIsSecretRevealed] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>('');
   const knownSecret = 'opensesame'; // Replace with your actual known secret
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,6 +30,9 @@ const SecretImageRevealer: React.FC = () => {
   const checkSecret = () => {
     if (input === knownSecret) {
       setIsSecretRevealed(true);
+      // Pick a random image from the array
+      const randomIndex = Math.floor(Math.random() * images.length);
+      setSelectedImage(images[randomIndex]);
     } else {
       setIsSecretRevealed(false);
     }
@@ -37,8 +55,8 @@ const SecretImageRevealer: React.FC = () => {
       />
       {isSecretRevealed && (
         <div className="image-container">
-          <a href={pebbles} target="_blank">
-            <img src={pebbles} className="logo" alt="Vite logo" />
+          <a href={selectedImage} target="_blank" rel="noopener noreferrer">
+            <img src={selectedImage} className="logo" alt="Secret Image" />
           </a>
         </div>
       )}
