@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 
 const ReferralDataFetcher: React.FC = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<string | null>(null);
 
   useEffect(() => {
     fetch('https://nice.runasp.net/Analytics/ReferralUrl')
@@ -10,9 +10,9 @@ const ReferralDataFetcher: React.FC = () => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return response.json();
+        return response.text(); // Use text() instead of json()
       })
-      .then(data => setData(data))
+      .then(text => setData(text)) // The response is a string
       .catch(error => console.error('There has been a problem with your fetch operation:', error));
   }, []);
 
@@ -21,7 +21,7 @@ const ReferralDataFetcher: React.FC = () => {
       {data ? (
         <div>
           <h2>Referral Data:</h2>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
+          <pre>{data}</pre> {/* Display the string data */}
         </div>
       ) : (
         <p>Loading...</p>
