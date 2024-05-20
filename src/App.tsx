@@ -3,6 +3,7 @@ import React from 'react';
 import Counter from './Counter'; // Import the Counter component
 import SecretImageRevealer from './SecretImageRevealer'; // Import the new component
 import ReferralDataFetcher from './ReferralDataFetcher'; // Import the new component
+import PublicChatSaver from './PublicChatSaver'; // Import the new component
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         Click on the Vite and React logos to learn more
       </p>
       <ReferralDataFetcher />
+      <PublicChatSaver /> {/* Use the PublicChatSaver component */}
     </>
   );
 }
