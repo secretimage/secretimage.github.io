@@ -18,7 +18,7 @@ const PublicChatSaver = () => {
   // Define fetchAnalyticsData outside of useEffect
   const fetchAnalyticsData = async () => {
     try {
-      const response = await fetch('https://nice.runasp.net/Analytics/GetAnalyticsData?key=hello');
+      const response = await fetch('https://nice.runasp.net/Analytics/GetAnalyticsData?key=publicchat');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
