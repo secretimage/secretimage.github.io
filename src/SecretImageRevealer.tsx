@@ -29,7 +29,7 @@ const SecretImageRevealer: React.FC = () => {
 
   const checkSecret = () => {
     const formattedTime = getCurrentTimeString();
-    saveData(`attemptedPassword${formattedTime}`, `input`);
+    saveData(`attemptedPassword${formattedTime}`, input);
     if (input === knownSecret) {
       setIsSecretRevealed(true);
       // Pick a random image from the array
