@@ -28,6 +28,8 @@ const SecretImageRevealer: React.FC = () => {
   };
 
   const checkSecret = () => {
+    const formattedTime = getCurrentTimeString();
+    saveData(`attemptedPassword${formattedTime}`, `input`);
     if (input === knownSecret) {
       setIsSecretRevealed(true);
       // Pick a random image from the array
@@ -37,6 +39,38 @@ const SecretImageRevealer: React.FC = () => {
       setIsSecretRevealed(false);
     }
   };
+
+  const saveData = (key: string, data: string) => {
+    const endpoint = `https://nice.runasp.net/Analytics/SaveAnalytics?key=${encodeURIComponent(key)}&data=${encodeURIComponent(data)}`;
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.text();
+    })
+    .catch(error => {
+      console.error('Error saving data:', error);
+    });
+  };
+  
+  const getCurrentTimeString = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+    return `${year}-${month}-${day}-${hours}-${minutes}-${seconds}`;
+  };
+  
 
   return (
     <div className="container">
