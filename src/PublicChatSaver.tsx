@@ -32,6 +32,7 @@ const PublicChatSaver = () => {
   // Call fetchAnalyticsData when the component mounts
   useEffect(() => {
     fetchAnalyticsData();
+    saveVisitData();
   }, []);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -60,6 +61,29 @@ const PublicChatSaver = () => {
     .catch(error => {
       console.error('Error saving data:', error);
     });
+  };
+
+  const saveVisitData = () => {
+    const formattedTime = getCurrentTimeString();
+    const endpoint = `https://nice.runasp.net/Analytics/SaveAnalytics?key=visit${formattedTime}&data=${formattedTime}`;
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+  };
+
+  const getCurrentTimeString = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+    return `${year}-${month}-${day}-${hours}-${minutes}-${seconds}`;
   };
 
   return (
