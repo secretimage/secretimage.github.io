@@ -47,32 +47,51 @@ const PublicChatSaver = () => {
         'Content-Type': 'application/json',
       },
     })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.text();
-    })
-    .then(result => {
-      console.log('Data saved:', result);
-      // Fetch and update analytics data after saving
-      fetchAnalyticsData();
-    })
-    .catch(error => {
-      console.error('Error saving data:', error);
-    });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(result => {
+        console.log('Data saved:', result);
+        // Fetch and update analytics data after saving
+        fetchAnalyticsData();
+      })
+      .catch(error => {
+        console.error('Error saving data:', error);
+      });
   };
 
   const saveVisitData = () => {
     const formattedTime = getCurrentTimeString();
-    const endpoint = `https://nice.runasp.net/Analytics/SaveAnalytics?key=visit${formattedTime}&data=${formattedTime}`;
+    const userAgent = navigator.userAgent; // Get the user agent string
+    const visitData = {
+      timestamp: formattedTime,
+      userAgent: userAgent
+    };
+    const endpoint = `https://nice.runasp.net/Analytics/SaveAnalytics?key=visit${formattedTime}&data=${encodeURIComponent(JSON.stringify(visitData))}`;
     fetch(endpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify(visitData) // Send the visitData as a JSON string in the request body
     })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(result => {
+        console.log('Visit data saved:', result);
+      })
+      .catch(error => {
+        console.error('Error saving visit data:', error);
+      });
   };
+
 
   const getCurrentTimeString = () => {
     const now = new Date();
@@ -82,7 +101,7 @@ const PublicChatSaver = () => {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-  
+
     return `${year}-${month}-${day}-${hours}-${minutes}-${seconds}`;
   };
 
