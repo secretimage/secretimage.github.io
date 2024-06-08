@@ -6,14 +6,14 @@ this is NOT a secure implementation.
 For demonstration and learning purposes only. 
 
 ```powershell
-cd "C:\Users\kushal\src\myhtml\mysecretpage"; date; yarn; date; yarn run build; date; git add .; date; git commit --message "build application" --message "from the terminal"; date; git pull --rebase origin main; date; git push origin main; date;
+> cd "C:\Users\kushal\src\myhtml\mysecretpage"; date; yarn; date; yarn run build; date; git add .; date; git commit --message "build application" --message "from the terminal"; date; git pull --rebase origin main; date; git push origin main; date;
 
-Saturday, June 8, 2024 8:35:01 AM
+Saturday, June 8, 2024 9:19:08 AM
 yarn install v1.22.21
 [1/4] Resolving packages...
 success Already up-to-date.
-Done in 0.12s.
-Saturday, June 8, 2024 8:35:02 AM
+Done in 0.10s.
+Saturday, June 8, 2024 9:19:08 AM
 yarn run v1.22.21
 $ tsc && vite build
 vite v5.2.10 building for production...
@@ -22,31 +22,56 @@ docs/index.html                   0.46 kB │ gzip:  0.30 kB
 docs/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.05 kB
 docs/assets/index-D6oJdQWc.css    1.61 kB │ gzip:  0.80 kB
 docs/assets/index-D6Y2owcv.js   147.57 kB │ gzip: 47.42 kB
-✓ built in 688ms
-Done in 3.81s.
-Saturday, June 8, 2024 8:35:06 AM
+✓ built in 617ms
+Done in 1.90s.
+Saturday, June 8, 2024 9:19:10 AM
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'docs/assets/index-D6Y2owcv.js', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'docs/assets/index-D6oJdQWc.css', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'docs/index.html', LF will be replaced by CRLF the next time Git touches it
-Saturday, June 8, 2024 8:35:06 AM
-[main 456473d] build application
- 1 file changed, 51 insertions(+)
- create mode 100644 docs/G1_free_up_space_LIGHTMODE_724a55ec07e993d5345ce9f3d6961d74.svg
-Saturday, June 8, 2024 8:35:06 AM
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+Saturday, June 8, 2024 9:19:10 AM
+[main 991dcda] build application
+ 27 files changed, 339 insertions(+), 1 deletion(-)
+ create mode 100644 docs/datausage.md
+ create mode 100644 docs/iphone-data-usage/IMG_0206.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0207.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0208.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0209.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0210.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0211.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0212.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0213.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0214.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0215.PNG
+ create mode 100644 docs/iphone-data-usage/IMG_0216.PNG
+ create mode 100644 public/datausage.md
+ create mode 100644 public/iphone-data-usage/IMG_0206.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0207.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0208.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0209.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0210.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0211.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0212.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0213.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0214.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0215.PNG
+ create mode 100644 public/iphone-data-usage/IMG_0216.PNG
+Saturday, June 8, 2024 9:19:11 AM
 From github.com:secretimage/secretimage.github.io
  * branch            main       -> FETCH_HEAD
 Current branch main is up to date.
-Saturday, June 8, 2024 8:35:07 AM
-Enumerating objects: 14, done.
-Counting objects: 100% (14/14), done.
+Saturday, June 8, 2024 9:19:11 AM
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
 Delta compression using up to 16 threads
-Compressing objects: 100% (11/11), done.
-Writing objects: 100% (11/11), 3.32 KiB | 3.32 MiB/s, done.
-Total 11 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 4.48 MiB | 6.95 MiB/s, done.
+Total 20 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 5 local objects.
 To github.com:secretimage/secretimage.github.io.git
-   aea65b6..456473d  main -> main
-Saturday, June 8, 2024 8:35:08 AM
+   7523a6f..991dcda  main -> main
+Saturday, June 8, 2024 9:19:13 AM
 ```
 
 ```
