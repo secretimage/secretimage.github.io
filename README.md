@@ -48,3 +48,20 @@ To github.com:secretimage/secretimage.github.io.git
    aea65b6..456473d  main -> main
 Saturday, June 8, 2024 8:35:08 AM
 ```
+
+```
+> yarn add react-router-dom
+yarn add v1.22.21
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 2 new dependencies.
+info Direct dependencies
+└─ react-router-dom@6.23.1
+info All dependencies
+├─ react-router-dom@6.23.1
+└─ react-router@6.23.1
+Done in 1.99s.
+```
