@@ -23,3 +23,167 @@ Don't get me wrong, on site butchers require competent employees with high stand
 If you ever want to learn about the meat industry go to a local butcher's shop. And just start talking and asking questions. People rarely don't enjoy talking about themselves. Just go when they're less busy and you'll probably get some impromptu meat cutter demos and a good lecture on what's what.
 
 As someone who knows a trained butcher, I can tell you the secret to winning their heart is complementing their knives. You show respect for their equipment and they'll probably talk your ear off.
+
+Meat Department 93
+
+Weekly Rate of Sell
+
+How much of an item you sell in one week on average. You can find this information in the Sales Floor Tool.
+
+Daily Rate of Sell
+
+How much of an item you sell in one day on average. You can find this information in the Sales Floor Tool.
+
+Mother Bag
+
+A Mother Bag is an inner pack on all Pork, Beef, and Ground Beef. Chicken does not come in mother bags. You can find the Mother Bag size under size when you scan and item in the Sales Floor Tool. Once a Mother Bag is open all product in that mother bag must be dated
+
+Inner Pack
+
+Inner Pack see Mother Bag.
+
+Eaches
+
+Each unit is sold at the same price.
+
+Pounds
+
+Each unit is sold by the pound.
+
+Vacuum Pack
+
+Items that come in vacuum sealed in plastic not in a tray.(Pork ribs, Pork Roasts, Fresh Turkey, All smoked meats. These items come in predated and DO NOT need a Use By Date sticker
+
+Beef Select Tray
+
+The cheaper beef Normally in a White Tray.
+
+Beef Angus Tray
+
+The expensive beef normally in a Black Tray
+
+Ground Beef Tray
+
+Hamburger or Ground Beef that comes in a tray
+
+Rolled Ground Beef / Beef Chubs
+
+Hamburger or Ground Beef that comes in a roll
+
+Pork
+
+Normally in a Pink Tray
+
+Chicken
+
+Normally in a Yellow Tray
+
+Dinner Sausage
+
+All Dinner Sausage come in Frozen and MUST be dated with a use by date printed from the Sales Floor Tool
+
+Breakfast Sausage
+
+All Breakfast Sausage come in Frozen. The Breakfast Sausage in a yellow tray or rolled DOES NOT need to be dated. The Breakfast Sausage in a white or black tray DOES need to be dated.
+
+Pack Out
+
+To put out as much product as possible. WE DO NOT PACK OUT ANY PRODUCT THAT NEEDS TO BE DATED. The only product we pack out is chicken, vacuum packed items and rolled ground beef. This product gets packed out because it comes in predated. Weather or not it is on the sales floor or in the backroom it is going to expire by its use by date.
+
+Minimum Presentation
+
+To put out your daily sale rate. This DOES NOT apply to chicken, vacuum packed items and ground beef chubs because it is already dated.
+
+Predated
+
+Chicken, vacuum packed items and ground beef chubs all come in from the warehouse with a use by date.
+
+Scale By Date
+
+Scale By Date is the date in which all items in that box or RPC must be dated. All Beef and Pork have a Scale By Date. A Scale By Date is NOT a Use By Date
+
+Use By Date
+
+Use By Date is what we put on all beef, pork and sausage and is the date that the item must be used or frozen
+
+CVP
+
+CVP is when we mark something down and try to sell it at a lower price
+
+Markdown to zero
+
+Markdown to zero is when we scan something in the claims app and zero it out to throw it away or donate it
+
+Throwaway
+
+Something that has to be thrown away and cannot be donated
+
+Donation
+
+Something that is donated to the local food bank
+
+Feed America
+
+We give our donations to a Feed America food bank. Sometimes abbreviated F.A.
+
+Cut out
+
+When your done doing your markdowns you must then cut all that meat out of its package and put it in the bone barrels
+
+Bone Barrels
+
+Bone Barrel is where we put our bad meat
+
+High Rack
+
+High Rack is the rack you put the meat on
+
+White Tray
+
+White Tray goes into a high rack
+
+Smoked Meat
+
+Meat that has been smoked such as hams
+
+Bunker
+
+Open cooler or freezers in the middle of the aisle
+
+Fresh vs Frozen
+
+An Item that comes in Refrigerated is fresh. An item that comes in Frozen is frozen
+
+PLU Code
+
+PLU stands for Product LookUp Code
+
+UPC
+
+UPC stands for Universal Product Code
+
+Wypall
+
+It’s a paper towel in a box. Use it to clean up blood or wipe down product that is bloody or wet.
+
+Break Down
+
+It’s what you do to the pallets of meat.
+
+Fill or Kill.
+
+If you have an empty feature you can either fill it or change it out.
+
+WIBI
+
+Would I Buy It. Can I sell it. When in doubt throw it out. If you can CVP then CVP
+
+Brown Meat
+
+If its brown mark it down. Apply the WIBI rule. See WIBI
+
+Ordering Fresh
+
+Only order when necessary. After you fill your wall and if you have outs that are not in the back room. Scan your outs, zero them and order 1 case and only 1 case of each out. Keep it simple and let the system do its job. The more you order the more work you have.
+
+https://old.reddit.com/r/walmart/comments/9exmrn/meat_department_93_tips_and_tricks/
