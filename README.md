@@ -90,3 +90,13 @@ info All dependencies
 └─ react-router@6.23.1
 Done in 1.99s.
 ```
+
+```html
+<button class="dig-IconButton dig-IconButton--transparent dig-IconButton--standard dig-IconButton--medium dig-Modal-close-btn" aria-label="Close" data-testid="digModalCloseButton">
+    <span class="dig-IconButton-content">
+        <svg viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24" height="24" role="presentation" focusable="false">
+            <path d="m17.5 6.5-11 11m11 0-11-11" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" vector-effect="non-scaling-stroke"></path>
+        </svg>
+    </span>
+</button>
+```
