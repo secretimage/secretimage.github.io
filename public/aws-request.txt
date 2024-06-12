@@ -1,0 +1,24 @@
+---
+**@AWSonAir:** Check out the Amazon Bedrock Getting Started (AWS Skill Builder) here: [link]
+
+**@customer:** A little off topic but is there any chance Amazon Web Services will introduce a tier that says don't charge my credit card at all, only use free services or a prepaid balance?
+
+**@customer:** That is meta.
+
+**@AWSonAir:** We can let the pricing team know about your comment, but it does differ from service to service on what is available even at free tier.
+
+**@customer:** Thank you. This would really help students. Like I would be ok even if you feature gate it behind like an edu email or something T_T thank you for your help.
+
+**@customer:** Like basically you can assume I am saying this root account and everything in it is for non-production, learning use only. It is ok if it crashes and burns.
+
+**@AWSonAir:** I hear you! I remember what it was like to be a student! LOL
+
+**@customer:** I appreciate it. I love you guys.
+
+**@AWSonAir:** [Response about building a Question-Answering Bot using Amazon AI with a link]
+
+**@customer:** Hahaha food references :)
+
+**@AWSonAir:** Seriously ...
+
+---
