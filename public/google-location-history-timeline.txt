@@ -1,0 +1,10 @@
+You previously turned on the Timeline setting—formerly called Location History —which helps you go back in time and remember where you’ve been. With Timeline, your visits and routes are automatically saved to a map on each of your devices.
+Timeline is changing and will now be created on your device. As part of this, you'll need to choose settings for your data by December 8, 2024 to avoid losing visits and routes.
+	
+How it works
+Like before, your devices will continue to save your visits in Timeline when this setting is on. But starting today, if you're signed in on multiple smartphones, each device will save new visits on its own Timeline.
+	
+What you need to do
+If you’d like to keep your saved visits and routes, choose your settings on your preferred smartphone by December 8, 2024. (You may first need to update the Google Maps app.)
+After you do this, you’ll only be able to use Timeline in the app.
+If you take no action, you may lose data. Google will try moving up to 90 days of Timeline data to the first signed-in device you use after December 8, 2024. Your older data will be deleted. Timeline will also remain on for your account, and your devices will continue saving new visits. Your visits and routes older than 3 months will be auto-deleted. 
