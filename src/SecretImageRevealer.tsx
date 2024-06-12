@@ -1,5 +1,5 @@
 // SecretImageRevealer.tsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './SecretImageRevealer.css'; // Import the CSS file for styling
 
 const images = [
@@ -27,6 +27,11 @@ const SecretImageRevealer: React.FC = () => {
     setInput(event.target.value);
   };
 
+  const selectNewImage = () => {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setSelectedImage(images[randomIndex]);
+  };
+
   const checkSecret = () => {
     const formattedTime = getCurrentTimeString();
     saveData(`attemptedPassword${formattedTime}`, input);
@@ -40,6 +45,9 @@ const SecretImageRevealer: React.FC = () => {
     }
   };
 
+  // Select a random image only once when the component is mounted
+  useEffect(selectNewImage, []); // The empty array ensures this effect runs only once
+
   const saveData = (key: string, data: string) => {
     const endpoint = `https://nice.runasp.net/Analytics/SaveAnalytics?key=${encodeURIComponent(key)}&data=${encodeURIComponent(data)}`;
     fetch(endpoint, {
@@ -48,17 +56,17 @@ const SecretImageRevealer: React.FC = () => {
         'Content-Type': 'application/json',
       },
     })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.text();
-    })
-    .catch(error => {
-      console.error('Error saving data:', error);
-    });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .catch(error => {
+        console.error('Error saving data:', error);
+      });
   };
-  
+
   const getCurrentTimeString = () => {
     const now = new Date();
     const year = now.getFullYear();
@@ -67,10 +75,10 @@ const SecretImageRevealer: React.FC = () => {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-  
+
     return `${year}-${month}-${day}-${hours}-${minutes}-${seconds}`;
   };
-  
+
 
   return (
     <div className="container">
@@ -87,17 +95,22 @@ const SecretImageRevealer: React.FC = () => {
         onBlur={checkSecret}
         onKeyUp={checkSecret}
       />
-      {isSecretRevealed && (
-        <div className="image-container">
-          <a href={selectedImage} target="_blank" rel="noopener noreferrer">
-            <img src={selectedImage} className="logo" alt="Secret Image" />
-          </a>
-        </div>
+     {isSecretRevealed && (
+        <>
+          <div className="image-container">
+            <a href={selectedImage} target="_blank" rel="noopener noreferrer">
+              <img src={selectedImage} className="logo" alt="Secret Image" />
+            </a>
+          </div>
+          <button onClick={selectNewImage} className="change-image-button">
+            Change Image
+          </button>
+        </>
       )}
-      
+
       {!isSecretRevealed && (
         <div className="image-container">
-            <p>Did you enter a password? Please check if it is correct.</p>
+          <p>Did you enter a password? Please check if it is correct.</p>
         </div>
       )}
     </div>
